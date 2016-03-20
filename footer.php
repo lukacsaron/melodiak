@@ -77,6 +77,8 @@
     });
 </script>
 <?php endif; ?>
+<script type="text/javascript" src="http://hostess:8888/wp-content/themes/melodiak/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="http://hostess:8888/wp-content/themes/melodiak/js/bootstrap-datepicker.hu.min.js"></script>
 <script type="text/javascript" src="http://hostess:8888/wp-content/themes/melodiak/js/javascript.js"></script>
 </body>
 

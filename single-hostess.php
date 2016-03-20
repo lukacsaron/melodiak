@@ -16,18 +16,25 @@ get_header(); ?>
                 
                 <main id="main" class="site-main" role="main">
 
-                    <?php while ( have_posts() ) : the_post(); ?>
-
-                        <?php get_template_part( 'loop-templates/content', 'single' ); ?>
-
-                        <?php understrap_post_nav(); ?>
-
-                        <?php
-                        // If comments are open or we have at least one comment, load up the comment template
-                        if ( comments_open() || get_comments_number() ) :
-                            comments_template();
-                        endif;
-                        ?>
+                    <?php while ( have_posts() ) : the_post(); 
+            $feat_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), $size='thumbnail' )[0];
+            $string = get_the_title();
+            $last_word_start = strrpos($string, ' ') + 1; // +1 so we don't include the space in our result
+            $surname = substr($string, $last_word_start); // $last_word = PHP.
+            ?>
+                
+            <div class="col-md-6">
+                <img class="profile-img" src="<?php echo $feat_image ?>">
+            </div>
+            <div class="col-md-6">
+                <img class="profile-img" src="<?php echo $feat_image ?>">
+            </div>
+                    
+                    <a href="<?php echo get_permalink(); ?>">
+                    
+                        <span class="nev"><?php echo $surname; ?></span>
+                   
+                </a>    
                         
                     <?php endwhile; // end of the loop. ?>
 

@@ -10,9 +10,25 @@ function center_name() {
     jQuery(".hostess .nev").css("top", $height/2-20);
 }
 
+function datepick() {
+    jQuery('[field_class="datepicker"]').datepicker({
+        format: 'yyyy/mm/dd',
+        startDate: '-50y',
+        autoclose: true,
+        startView: 'decade'
+});
+jQuery('[field_class="datepicker_quote"]').datepicker({
+        format: 'yyyy/mm/dd',
+        startDate: '-50y',
+        autoclose: true,
+        startView: 'year'
+});
+}
+
 jQuery(function(e) {
     resize_overlay_box();
     center_name();
+    datepick();
 });
 
 jQuery(window).on('resize', function(){
