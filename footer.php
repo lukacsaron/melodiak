@@ -21,10 +21,18 @@
                 <footer id="colophon" class="site-footer" role="contentinfo">
 
                     <div class="site-info">
-                        <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'understrap' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'understrap' ), 'WordPress' ); ?></a>
-                        <span class="sep"> | </span>
-                        <?php printf( __( 'Theme: %1$s by %2$s.', 'understrap' ), 'understrap', '<a href="http://understrap.com/" rel="designer">understrap.com</a>' ); ?>
+                        <?php 
+	                       $addr = get_post_meta( 55, 'wpcf-cim', true);
+	                       $tel = get_post_meta( 55, 'wpcf-telefon', true);
+                           $fax = get_post_meta( 55, 'wpcf-fax', true);
+                           $business = get_post_meta( 55, 'wpcf-vallalkozas', true);
+		                ?>
+                        
+                        <span><?php echo $addr; ?> | <?php echo $tel; ?> | <?php echo $fax; ?></span><br>
+                        <span><?php echo $business; ?></span>
+                        </span>
                     </div><!-- .site-info -->
+                    <?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
 
                 </footer><!-- #colophon -->
 
@@ -69,7 +77,7 @@
     });
 </script>
 <?php endif; ?>
-
+<script type="text/javascript" src="http://hostess:8888/wp-content/themes/melodiak/js/javascript.js"></script>
 </body>
 
 </html>

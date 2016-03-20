@@ -24,15 +24,19 @@
 <body <?php body_class(); ?>>
 
 <div id="page" class="hfeed site">
+    <?php
+if ( is_front_page() ) {
+    // This is the blog posts index
+    get_template_part( 'content', 'frontheader' );
+}
+?>
     
     <!-- ******************* The Navbar Area ******************* -->
     <div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 	
-        <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'understrap' ); ?></a>
-
         <nav class="site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                             
-            <div class="navbar navbar-inverse">
+            <div class="navbar navbar-default">
 
                 <div class="container">
 
@@ -51,7 +55,7 @@
                                 </button>
 
                                 <!-- Your site title as branding in the menu -->
-                                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://hostess:8888/wp-content/themes/melodiak/img/logo.png"></a>
 
                             </div>
 
