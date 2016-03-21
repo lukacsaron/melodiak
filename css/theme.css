@@ -8008,6 +8008,12 @@ a.skip-link {
 .content-area img {
   max-width: 100%; }
 
+.white {
+  color: #fff; }
+
+.gray {
+  color: #bcbcbc; }
+
 #wrapper-footer {
   background: #00a6ec;
   text-align: center; }
@@ -8071,9 +8077,10 @@ a.skip-link {
   margin-bottom: 25px;
   overflow: hidden; }
   .hostess-loop .hostess img {
-    max-width: 100%; }
+    max-width: 100%;
+    width: 100%; }
 
-.overlay {
+a.hover .overlay {
   margin-left: 15px;
   position: absolute;
   top: 0;
@@ -8081,19 +8088,40 @@ a.skip-link {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 166, 236, 0.6);
-  opacity: 0; }
-  .overlay .nev {
+  opacity: 0;
+  z-index: 4; }
+  a.hover .overlay .nev {
     color: #fff;
     position: absolute;
     left: 0;
     right: 0; }
-    .overlay .nev:after {
+    a.hover .overlay .nev:after {
       content: 'adatlapja ‣';
       display: block;
       font-family: Georgia, "Times New Roman", Times, serif;
       font-size: 14px; }
-  .overlay:hover {
-    opacity: 1; }
+
+a.hover:hover > .overlay {
+  opacity: 1; }
+
+a.hover:hover + .fixed-overlay {
+  opacity: 0; }
+
+.fixed-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  padding: 0 0 5px 10px;
+  color: #fff;
+  background: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y_/r/BLkQpe-i5LN.png) bottom left repeat-x;
+  background-size: 1px; }
+  .fixed-overlay .info {
+    position: relative;
+    display: block; }
+  .fixed-overlay .info-inline {
+    position: relative;
+    display: inline-block; }
 
 .transition {
   transition: 0.3s all ease-in-out; }
@@ -8155,6 +8183,9 @@ a.skip-link {
   margin-top: 0;
   padding-top: 0;
   color: #bcbcbc; }
+
+.hostess-details {
+  text-transform: uppercase; }
 
 /*!
  * Datepicker for Bootstrap v1.7.0-dev (https://github.com/eternicode/bootstrap-datepicker)

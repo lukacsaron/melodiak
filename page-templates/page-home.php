@@ -80,7 +80,7 @@ get_header(); ?>
             ?>
                 
             <div class="hostess col-md-2-4">
-                <a href="<?php echo get_permalink(); ?>">
+                <a class="hover" href="<?php echo get_permalink(); ?>">
                     <div class="overlay transition">
                         <span class="nev"><?php echo $surname; ?></span>
                     </div>

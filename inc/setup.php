@@ -103,3 +103,28 @@ function register_footer_menu() {
   register_nav_menu('footer-menu',__( 'Footer Menu' ));
 }
 add_action( 'init', 'register_footer_menu' );
+
+add_image_size( 'hostess_single', 550, 550, true );
+
+function calculate_age() {
+        $szuletes = get_post_meta( $post->ID, 'usp-custom-szuletes', true);
+        $current_year = date("Y");
+                    
+   // calculate age and add to post meta if theres no value yet
+            
+            if (strlen($szuletes)<=4) {
+                $eletkor =  $current_year - $szuletes;
+                add_post_meta( $post->ID, 'usp-custom-eletkor', $eletkor, true );
+            }
+            else {
+                    
+                if( get_post_meta($post->ID, 'usp-custom-eletkor', true) ) {
+                }
+                else {                    
+                    $from = new DateTime($szuletes);
+                    $to   = new DateTime('today');
+                    $eletkor = $from->diff($to)->y;
+                    add_post_meta( $post->ID, 'usp-custom-eletkor', $eletkor, true );
+                }
+                }
+}

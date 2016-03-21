@@ -1,6 +1,7 @@
 function resize_overlay_box() {
     var $width = jQuery('.hostess').width();
     jQuery(".overlay").css("width", $width);
+    jQuery(".fixed-overlay").css("width", $width);
     jQuery(".hostess").css("height", $width);
 }
 
