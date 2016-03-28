@@ -5,6 +5,10 @@ function resize_overlay_box() {
     jQuery(".hostess").css("height", $width);
 }
 
+function resize_profile() {
+    var $width = jQuery('.profile-img-container').width();
+    jQuery(".profile-img-container").css("height", $width);
+}
 
 function center_name() {
     var $height = jQuery('.hostess').height();
@@ -54,6 +58,10 @@ jQuery(function(e) {
 });
 
 jQuery(function(e) {
+    resize_profile();
+});
+
+jQuery(function(e) {
     resize_overlay_box();
     center_name();
     datepick();
@@ -64,4 +72,8 @@ jQuery(function(e) {
 jQuery(window).on('resize', function(){
       resize_overlay_box();
       center_name();
+});
+
+jQuery(window).on('resize', function(){
+      resize_profile();
 });

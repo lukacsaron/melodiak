@@ -58,7 +58,7 @@ get_header(); ?>
                 }
             ?>
                 
-            <div class="hostess col-md-4">
+            <div class="hostess col-md-4 col-sm-4">
                 <a class="hover" href="<?php echo get_permalink(); ?>">
                     <div class="overlay transition">
                         <span class="nev"><?php echo $surname; ?></span>

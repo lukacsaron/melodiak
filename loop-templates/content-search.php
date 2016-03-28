@@ -8,6 +8,7 @@
             $last_word_start = strrpos($string, ' ') + 1; // +1 so we don't include the space in our result
             $surname = substr($string, $last_word_start); // $last_word = PHP.
             $szuletes = get_post_meta( $post->ID, 'usp-custom-szuletes', true);
+            $eletkor = get_post_meta( $post->ID, 'usp-custom-eletkor', true);
             $current_year = date("Y");
                     
             // calculate age and add to post meta if theres no value yet

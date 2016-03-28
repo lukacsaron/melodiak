@@ -8020,6 +8020,20 @@ a.skip-link {
   .entry-header {
     padding: 0; } }
 
+.home #page-wrapper {
+  padding: 0; }
+
+#wprmenu_bar {
+  padding: 12px 16px !important; }
+
+#wprmenu_menu.wprmenu_levels ul li a {
+  font-family: "campton_bookbold", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 17px; }
+
+.bar_logo {
+  float: right; }
+
 .nopadding {
   padding: 0;
   margin: 0; }
@@ -8034,6 +8048,10 @@ a.skip-link {
 
 @media (max-width: 768px) {
   .hide-mobile {
+    display: none; } }
+
+@media (min-width: 769px) {
+  .hide-desktop {
     display: none; } }
 
 .white {
@@ -8076,6 +8094,9 @@ a.skip-link {
   float: right; }
   #main-menu li:nth-last-child(1) {
     margin-left: 30px; }
+  @media (min-width: 1024px) and (max-width: 1198px) {
+    #main-menu li {
+      font-size: 17px; } }
 
 #menu-footer-menu {
   margin-top: 5px;
@@ -8169,7 +8190,8 @@ p {
   overflow: hidden; }
   @media (max-width: 768px) {
     .hostess-loop .hostess {
-      padding: 0; } }
+      padding: 0;
+      margin-bottom: 10px; } }
   .hostess-loop .hostess img {
     max-width: 100%;
     width: 100%; }
@@ -8216,6 +8238,9 @@ a.hover:hover + .fixed-overlay {
   .fixed-overlay .info {
     position: relative;
     display: block; }
+  @media (max-width: 768px) {
+    .fixed-overlay .info-nev {
+      margin-bottom: -3px; } }
   .fixed-overlay .info-inline {
     position: relative;
     display: inline-block;
@@ -8223,6 +8248,14 @@ a.hover:hover + .fixed-overlay {
     @media (max-width: 768px) {
       .fixed-overlay .info-inline {
         font-size: 17px; } }
+
+.info-inline {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase; }
+  @media (max-width: 768px) {
+    .info-inline {
+      font-size: 17px; } }
 
 .transition {
   transition: 0.3s all ease-in-out; }
@@ -8292,13 +8325,37 @@ a.hover:hover + .fixed-overlay {
 
 .team-container {
   text-transform: uppercase; }
+  .team-container .team-info {
+    padding-left: 10px; }
+  @media (max-width: 768px) {
+    .team-container {
+      padding: 0;
+      margin: 0; }
+      .team-container .container {
+        padding: 0;
+        margin: 0; }
+      .team-container .team-info {
+        padding-left: 10px; } }
   .team-container .container {
     padding-left: 0px;
     margin-left: 0px; }
   .team-container .titulus {
     margin-bottom: 15px !important; }
+    @media (max-width: 768px) {
+      .team-container .titulus {
+        font-size: 11px;
+        padding-top: 3px;
+        margin-bottom: 0 !important; } }
+  @media (max-width: 768px) {
+    .team-container .email {
+      margin-top: -25px; } }
   .team-container span {
     font-size: 14px; }
+    @media (max-width: 768px) {
+      .team-container span {
+        font-size: 9px;
+        margin-top: 5px;
+        display: block; } }
   .team-container * {
     color: #bcbcbc; }
 
@@ -8307,15 +8364,40 @@ a.hover:hover + .fixed-overlay {
   margin: 0; }
   .team-img img {
     max-width: 100%;
-    height: 200px; }
+    height: auto; }
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    padding: 0; } }
+
+@media (max-width: 768px) {
+  .contact-wrapper .col-md-12 {
+    padding: 0; } }
 
 .contact-wrapper h3 {
   margin-top: 0;
   padding-top: 0;
   color: #bcbcbc; }
 
-.hostess-details {
+.contact-details {
   text-transform: uppercase; }
+  @media (max-width: 768px) {
+    .contact-details {
+      margin-top: 15px;
+      padding: 0; } }
+
+.hostess-details {
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+  .hostess-details.hide-mobile {
+    padding-left: 30px; }
+  .hostess-details .info {
+    font-size: 16px; }
+
+.profile-img-container {
+  overflow: hidden;
+  height: auto;
+  margin-bottom: 15px; }
 
 .usp-pro-form {
   margin-top: 50px; }
@@ -8789,39 +8871,101 @@ a.hover:hover + .fixed-overlay {
     line-height: 19px;
     padding: 0; } }
 
-#pre-form {
+@media (max-width: 784px) {
+  .preform-container {
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0; } }
+
+@media (max-width: 784px) {
+  .preform-container .col-md-12 {
+    padding: 0;
+    margin: 0; } }
+
+.preform-container #pre-form {
   position: absolute;
   right: 0;
   top: -110px;
   padding: 15px;
   background: #fff; }
-  #pre-form .preform-title {
+  @media (max-width: 784px) {
+    .preform-container #pre-form {
+      margin-left: -15px;
+      top: -200px;
+      background: #00a6ec;
+      height: 200px;
+      width: 100%; } }
+  .preform-container #pre-form .preform-title {
     position: absolute;
     top: -46px;
     color: #fff; }
-  #pre-form form input, #pre-form form select {
+    @media (max-width: 784px) {
+      .preform-container #pre-form .preform-title {
+        position: relative;
+        top: 0;
+        text-align: center; } }
+  @media (max-width: 784px) {
+    .preform-container #pre-form form {
+      text-align: center;
+      width: 200px;
+      margin: 0 auto; } }
+  .preform-container #pre-form form input, .preform-container #pre-form form select {
+    text-align: center;
     border: none;
     text-transform: uppercase; }
-    #pre-form form input:focus, #pre-form form select:focus {
+    @media (max-width: 784px) {
+      .preform-container #pre-form form input, .preform-container #pre-form form select {
+        margin-bottom: 10px; } }
+    .preform-container #pre-form form input:focus, .preform-container #pre-form form select:focus {
       outline-color: transparent;
       outline-style: none; }
-  #pre-form form .custom-dropdown {
-    width: 184px;
-    vertical-align: inherit; }
-    #pre-form form .custom-dropdown select {
-      background: #fff;
-      color: #00a6ec; }
-  #pre-form form #szam {
-    width: 50px;
-    margin-left: 30px; }
-  #pre-form form #datum {
+  .preform-container #pre-form form .custom-dropdown {
+    width: 190px;
+    vertical-align: inherit;
+    background: #fff;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAANUlEQVQImWNkWPbmPwMRgImBgYGRCHWMTDAGPkUMDAwMTP8jhVEEsCmCWc2AQzGc/T9SmAEAt5cG5ETiApwAAAAASUVORK5CYII=");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px;
+    cursor: pointer; }
+    @media (max-width: 784px) {
+      .preform-container #pre-form form .custom-dropdown {
+        display: block;
+        width: 100%;
+        background-position: 96%;
+        margin-bottom: 10px; } }
+    .preform-container #pre-form form .custom-dropdown select {
+      background: transparent;
+      color: #00a6ec;
+      cursor: pointer; }
+  .preform-container #pre-form form #szam {
+    margin-left: 24px;
+    margin-right: 14px;
+    width: 40px; }
+    @media (max-width: 784px) {
+      .preform-container #pre-form form #szam {
+        margin-left: 0;
+        margin-right: 62px; } }
+  .preform-container #pre-form form #datum {
     width: 125px; }
-  #pre-form form #nemek {
+    @media (max-width: 784px) {
+      .preform-container #pre-form form #datum {
+        width: 100%; } }
+  .preform-container #pre-form form #nemek {
     width: 184px; }
-  #pre-form form #submit {
+    @media (max-width: 784px) {
+      .preform-container #pre-form form #nemek {
+        margin: 0; } }
+  .preform-container #pre-form form #submit {
     background: #fff;
     border: none;
     color: #00a6ec; }
+    @media (max-width: 784px) {
+      .preform-container #pre-form form #submit {
+        margin-right: -1px;
+        color: #fff;
+        background: #00a6ec; } }
 
 /*!
  * Datepicker for Bootstrap v1.7.0-dev (https://github.com/eternicode/bootstrap-datepicker)

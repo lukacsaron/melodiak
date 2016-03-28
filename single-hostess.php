@@ -22,8 +22,29 @@ get_header(); ?>
             $last_word_start = strrpos($string, ' ') + 1; // +1 so we don't include the space in our result
             $surname = substr($string, $last_word_start); // $last_word = PHP.
             $szuletes = get_post_meta( $post->ID, 'usp-custom-szuletes', true);
+            $eletkor = get_post_meta( $post->ID, 'usp-custom-eletkor', true);
             $jogsi = get_post_meta( $post->ID, 'info-jogsi', true);
+            $img1 = get_post_meta( $post->ID, 'usp-file-1', true);
+            $img2 = get_post_meta( $post->ID, 'usp-file-2', true);
             $current_year = date("Y");
+            $language = "na";
+                    
+            if( get_post_meta($post->ID, 'usp-custom-angol', true) ) {
+                $language ="angol";
+            }
+            if( get_post_meta($post->ID, 'usp-custom-francia', true) ) {
+                $language .=" | francia";
+            }
+            if( get_post_meta($post->ID, 'usp-custom-nemet', true) ) {
+                $language .=" | nemet";
+            }
+            if( get_post_meta($post->ID, 'usp-custom-olasz', true) ) {
+                $language .=" | olasz";
+            }
+            if( get_post_meta($post->ID, 'usp-custom-spanyol', true) ) {
+                $language .=" | spanyol";
+            }
+                    
                     
    // calculate age and add to post meta if theres no value yet
             
@@ -44,19 +65,27 @@ get_header(); ?>
                 }
             ?>
                 
-            <div class="col-md-6">
-                <img class="profile-img" src="<?php echo $feat_image ?>">
+            <div class="col-md-6 profile-img-container">
+                <img class="profile-img" src="<?php echo $img1 ?>">
             </div>
-            <div class="col-md-6">
-                <img class="profile-img" src="<?php echo $feat_image ?>">
+            <div class="col-md-6 hostess-details hide-desktop">       
+                <h4 class="i nopadding gray"><?php echo $post->ID; ?></h4>
+                <h2 class="nopadding gray"><?php echo $surname; ?></h2>
+                <h4 class="info-inline nopadding gray"><?php echo $eletkor; ?> Éves</h4>
+                <h4 class="info-inline nopadding gray"><?php echo $eletkor; ?> CM Magas</h4><br>
+                <span class="info">Idegennyelvek: <?php echo $language; ?></span><br>
+                <span class="info">Jogosítvány: <?php echo $jogsi; ?></span>
+            </div>
+            <div class="col-md-6 profile-img-container">
+                <img class="profile-img" src="<?php echo $img2 ?>">
             </div>
                     
-             <div class="col-md-6 hostess-details">       
-                <span class="i"><?php echo $post->ID; ?></span>
-                <h3 class="nopadding gray"><?php echo $surname; ?></h3>
-                <h4 class="info-inline nopadding"><?php echo $eletkor; ?> Éves</h4>
-                <h4 class="info-inline nopadding"><?php echo $eletkor; ?> Magas</h4><br>
-                <span class="info">Idegennyelvek:</span><br>
+             <div class="col-md-6 hostess-details hide-mobile">       
+                <h4 class="i nopadding gray"><?php echo $post->ID; ?></h4>
+                <h2 class="nopadding gray"><?php echo $surname; ?></h2>
+                <h4 class="info-inline nopadding gray"><?php echo $eletkor; ?> Éves</h4>
+                <h4 class="info-inline nopadding gray"><?php echo $eletkor; ?> CM Magas</h4><br>
+                <span class="info">Idegennyelvek: <?php echo $language; ?></span><br>
                 <span class="info">Jogosítvány: <?php echo $jogsi; ?></span>
             </div>
             <div class="col-md-6">

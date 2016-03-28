@@ -8,7 +8,7 @@
 
 <div class="wrapper home-header">
    <img src="http://hostess:8888/wp-content/themes/melodiak/img/banner.jpg">
-    <div class="container">
+    <div class="container preform-container">
         <div class="col-md-12">
             <div id="pre-form">
                 <h5 class="preform-title">ÁRAJÁNLATKÉRÉS</h5>

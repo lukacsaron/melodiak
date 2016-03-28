@@ -79,7 +79,7 @@ get_header(); ?>
             $surname = substr($string, $last_word_start); // $last_word = PHP.
             ?>
                 
-            <div class="hostess col-md-2-4">
+            <div class="hostess col-md-2-4 col-sm-6">
                 <a class="hover" href="<?php echo get_permalink(); ?>">
                     <div class="overlay transition">
                         <span class="nev"><?php echo $surname; ?></span>

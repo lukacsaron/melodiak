@@ -31,13 +31,13 @@ get_header(); ?>
             ?>
 
 			
-            <div class="container col-md-6">
-                <div class="container team-img col-md-5"><img src="<?php echo $feat_image ?>"></div>
-                <div class="team-info nopadding col-md-7">
+            <div class="container col-md-6 col-xs-12">
+                <div class="container team-img col-md-5 col-xs-4"><img src="<?php echo $feat_image ?>"></div>
+                <div class="team-info nopadding col-md-7 col-xs-8">
                     <h4 class="nopadding"><?php echo get_the_title(); ?></h4>
                     <h6 class="nopadding titulus"><?php echo $titulus; ?></h6>
                     <span>Mobil: <?php echo $tel; ?></span><br>
-                    <span><?php echo $email; ?></span><br>
+                    <span class="email"><?php echo $email; ?></span><br>
                 </div>
             </div>
             <?php endwhile; // end of the loop. ?>
@@ -54,7 +54,7 @@ get_header(); ?>
             <div class="col-md-8 nopadding">
                 <img src="http://hostess:8888/wp-content/themes/melodiak/img/map.jpg">
            </div>
-           <div class="col-md-4">
+           <div class="col-md-4 contact-details">
                         <?php 
 	                       $addr = get_post_meta( 55, 'wpcf-cim', true);
 	                       $tel = get_post_meta( 55, 'wpcf-telefon', true);
@@ -80,7 +80,7 @@ get_header(); ?>
 <!-- footer callout -->
 <div class="wrapper">
     <div class="container">
-        <div class="footer-callout col-md-12">
+        <div class="footer-callout row">
             <img src="http://hostess:8888/wp-content/themes/melodiak/img/footer_callout.jpg">
         </div>
     </div>
