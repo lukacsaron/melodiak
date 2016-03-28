@@ -25,3 +25,14 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'museoslab';
+    src: url('#{$fa-font-path}/museo_slab_300-webfont.eot');
+    src: url('#{$fa-font-path}/museo_slab_300-webfont.woff2') format('woff2'),
+         url('#{$fa-font-path}/museo_slab_300-webfont.woff') format('woff'),
+         url('#{$fa-font-path}/museo_slab_300-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

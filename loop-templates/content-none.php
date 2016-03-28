@@ -13,7 +13,7 @@
 
 	<header class="page-header">
 
-		<h2 class="page-title"><?php _e( 'Nothing Found', 'understrap' ); ?></h2>
+		<h2 class="page-title"><?php _e( 'Nincs megfelelő találat!', 'understrap' ); ?></h2>
 
 	</header><!-- .page-header -->
 
@@ -25,8 +25,7 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'understrap' ); ?></p>
-			<?php get_search_form(); ?>
+			<h4><?php _e( 'Új szűrési feltételeket kell megadni.', 'understrap' ); ?></h4>
 
 		<?php else : ?>
 

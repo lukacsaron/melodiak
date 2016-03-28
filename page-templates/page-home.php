@@ -66,7 +66,7 @@ get_header(); ?>
 </div>
 <!-- hostesses loop -->
 <div class="wrapper">
-    <div class="container">
+    <div class="container hostess-container">
         <div class="hostess-loop col-md-12">
             <?php 
 
@@ -97,7 +97,7 @@ get_header(); ?>
     </div>
 </div>
 <!-- footer callout -->
-<div class="wrapper">
+<div class="wrapper callout-wrapper">
     <div class="container">
         <div class="footer-callout col-md-12">
             <img src="http://hostess:8888/wp-content/themes/melodiak/img/footer_callout.jpg">

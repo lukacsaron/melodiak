@@ -5935,6 +5935,13 @@ a.skip-link {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'museoslab';
+  src: url("../fonts/museo_slab_300-webfont.eot");
+  src: url("../fonts/museo_slab_300-webfont.woff2") format("woff2"), url("../fonts/museo_slab_300-webfont.woff") format("woff"), url("../fonts/museo_slab_300-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px / 1 FontAwesome;
@@ -8001,18 +8008,61 @@ a.skip-link {
 .fa-percent:before {
   content: ""; }
 
+@media (max-width: 768px) {
+  h4 {
+    font-size: 20px; } }
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 26px; } }
+
+@media (max-width: 768px) {
+  .entry-header {
+    padding: 0; } }
+
 .nopadding {
   padding: 0;
   margin: 0; }
 
+.properpadding {
+  padding-left: 15px !important;
+  padding-right: 15px !important; }
+
 .content-area img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none; } }
 
 .white {
   color: #fff; }
 
 .gray {
   color: #bcbcbc; }
+
+.page-header {
+  padding-bottom: 13px;
+  margin: 56px 0 28px;
+  border-bottom: none; }
+
+@media (max-width: 768px) {
+  .callout-wrapper {
+    padding: 0; } }
+
+.search-no-results header {
+  margin: 0;
+  padding: 0; }
+
+.search-no-results h2 {
+  text-align: center; }
+
+.search-no-results h4 {
+  text-align: center; }
+
+.search-no-results .page-content {
+  margin-bottom: 150px; }
 
 #wrapper-footer {
   background: #00a6ec;
@@ -8029,11 +8079,15 @@ a.skip-link {
 
 #menu-footer-menu {
   margin-top: 5px;
+  padding: 0;
   font-size: 20px;
   text-transform: uppercase; }
   #menu-footer-menu li {
     list-style: none;
     display: inline-block; }
+    @media (max-width: 768px) {
+      #menu-footer-menu li {
+        font-size: 15px; } }
 
 .navbar-brand img {
   margin-top: -34px; }
@@ -8042,13 +8096,38 @@ a.skip-link {
   padding-right: 0px; }
 
 .entry-content p {
-  font-family: Georgia, "Times New Roman", Times, serif; }
+  font-size: 22px;
+  font-family: "museoslab", "Times New Roman", Times, serif; }
+  @media (max-width: 768px) {
+    .entry-content p {
+      padding: 0 30px; } }
+
+p {
+  font-family: "museoslab", "Times New Roman", Times, serif; }
 
 .ident-wrapper {
   height: 320px;
   padding-top: 53px;
   background: #f4f4f4;
   border-bottom: 2px solid #bcbcbc; }
+  @media (max-width: 768px) {
+    .ident-wrapper .container {
+      overflow-y: hidden; } }
+  @media (max-width: 768px) {
+    .ident-wrapper {
+      padding-top: 30px;
+      height: 210px; }
+      .ident-wrapper .brand-ident {
+        width: 750px;
+        height: 160px;
+        overflow-y: hidden; }
+        .ident-wrapper .brand-ident .ident {
+          height: 140px;
+          width: 170px !important;
+          display: inline-block; }
+          .ident-wrapper .brand-ident .ident span {
+            font-size: 11px;
+            top: 110px; } }
 
 .ident {
   text-align: center;
@@ -8071,11 +8150,26 @@ a.skip-link {
   .ident:nth-child(1) img {
     max-height: 116px; }
 
+@media (max-width: 768px) {
+  .hostess-container {
+    overflow-y: hidden; }
+    .hostess-container .hostess-loop {
+      height: 200px;
+      width: 10000px;
+      padding-left: 0; }
+      .hostess-container .hostess-loop .hostess {
+        width: 200px;
+        display: inline-block;
+        margin-right: 25px; } }
+
 .hostess-loop .hostess {
   text-align: center;
   height: 200px;
   margin-bottom: 25px;
   overflow: hidden; }
+  @media (max-width: 768px) {
+    .hostess-loop .hostess {
+      padding: 0; } }
   .hostess-loop .hostess img {
     max-width: 100%;
     width: 100%; }
@@ -8090,6 +8184,9 @@ a.hover .overlay {
   background-color: rgba(0, 166, 236, 0.6);
   opacity: 0;
   z-index: 4; }
+  @media (max-width: 768px) {
+    a.hover .overlay {
+      margin-left: 0; } }
   a.hover .overlay .nev {
     color: #fff;
     position: absolute;
@@ -8098,7 +8195,7 @@ a.hover .overlay {
     a.hover .overlay .nev:after {
       content: 'adatlapja ‣';
       display: block;
-      font-family: Georgia, "Times New Roman", Times, serif;
+      font-family: "museoslab", "Times New Roman", Times, serif;
       font-size: 14px; }
 
 a.hover:hover > .overlay {
@@ -8121,25 +8218,51 @@ a.hover:hover + .fixed-overlay {
     display: block; }
   .fixed-overlay .info-inline {
     position: relative;
-    display: inline-block; }
+    display: inline-block;
+    text-transform: uppercase; }
+    @media (max-width: 768px) {
+      .fixed-overlay .info-inline {
+        font-size: 17px; } }
 
 .transition {
   transition: 0.3s all ease-in-out; }
 
 .footer-callout {
   padding: 0 30px; }
+  @media (max-width: 768px) {
+    .footer-callout {
+      padding: 0; } }
   .footer-callout img {
     max-width: 100%; }
 
 .entry-title {
   text-transform: uppercase;
   margin-left: -2px; }
+  @media (max-width: 768px) {
+    .entry-title {
+      font-size: 30px;
+      text-align: center; } }
 
 .entry-content p {
   line-height: 28px; }
+  @media (max-width: 768px) {
+    .entry-content p {
+      font-size: 16px;
+      text-align: center; } }
 
 .clear {
   clear: both; }
+
+.spacer {
+  margin-bottom: 30px; }
+
+.notop {
+  padding-top: 0 !important;
+  margin-bottom: 142px; }
+
+.nyelvek {
+  height: auto;
+  margin-bottom: 35px; }
 
 .services-loop .service-box h4 {
   text-transform: uppercase;
@@ -8148,14 +8271,21 @@ a.hover:hover + .fixed-overlay {
 .services-loop .service-box ul {
   padding-left: 20px; }
   .services-loop .service-box ul li {
-    font-family: Georgia, "Times New Roman", Times, serif; }
+    font-family: "museoslab", "Times New Roman", Times, serif; }
+    @media (max-width: 768px) {
+      .services-loop .service-box ul li {
+        font-size: 16px; } }
 
 .site-info {
   text-transform: uppercase; }
+  @media (max-width: 768px) {
+    .site-info {
+      font-size: 8px; } }
 
 .home-header {
   max-height: 600px;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 0; }
   .home-header img {
     height: 100%;
     width: auto; }
@@ -8187,6 +8317,512 @@ a.hover:hover + .fixed-overlay {
 .hostess-details {
   text-transform: uppercase; }
 
+.usp-pro-form {
+  margin-top: 50px; }
+
+.form-control {
+  height: 31px;
+  padding: 6px 6px !important;
+  margin: 12px 0; }
+
+.question {
+  padding: 15px 0 10px 0; }
+
+.right {
+  text-align: right;
+  padding-right: 85px; }
+  @media (max-width: 768px) {
+    .right {
+      text-align: center;
+      padding: 0; } }
+
+.usp-form .col-md-6 {
+  padding-left: 0; }
+  @media (max-width: 768px) {
+    .usp-form .col-md-6 {
+      padding-left: 15px; }
+      .usp-form .col-md-6 .col-md-6, .usp-form .col-md-6 .col-md-12, .usp-form .col-md-6 .col-md-4 {
+        padding-left: 0px; } }
+
+.usp-form .col-md-12 {
+  padding-left: 0; }
+  @media (max-width: 768px) {
+    .usp-form .col-md-12 {
+      padding-left: 15px; }
+      .usp-form .col-md-12 .col-md-6, .usp-form .col-md-12 .col-md-12, .usp-form .col-md-12 .col-md-4 {
+        padding-left: 0px; } }
+
+.usp-fieldset label {
+  height: 31px;
+  line-height: 31px;
+  padding-left: 0; }
+
+.usp-fieldset input {
+  margin-top: 0px; }
+
+@media (max-width: 768px) {
+  #usp-form-18 fieldset label[for="usp-email"] {
+    display: none; }
+  #usp-form-18 fieldset label[for="usp-custom-4"] {
+    display: none; }
+  #usp-form-18 fieldset label[for="usp-custom-4"] {
+    display: none; }
+  #usp-form-18 fieldset label[for="usp-custom-1"] {
+    display: none; }
+  #usp-form-18 fieldset label[for="usp-custom-2"] {
+    display: none; }
+  #usp-form-18 fieldset label[for="usp-custom-3"] {
+    display: none; } }
+
+.usp-radio label {
+  position: relative;
+  padding-left: 33px;
+  cursor: pointer;
+  margin: 0 20px 5px 0px; }
+  .usp-radio label:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 5px solid #00a6ec;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    -webkit-transition: all ease-in-out 0.1s;
+    -o-transition: all ease-in-out 0.1s;
+    transition: all ease-in-out 0.1s; }
+
+.usp-radio input[type=radio] {
+  display: none; }
+  .usp-radio input[type=radio]:checked + label:before {
+    content: "";
+    border: 12.5px solid #00a6ec;
+    background: #00a6ec;
+    -webkit-transition: all ease-in-out 0.1s;
+    -o-transition: all ease-in-out 0.1s;
+    transition: all ease-in-out 0.1s; }
+
+.usp-checkboxes .col-md-4 {
+  padding: 0 5px; }
+
+.usp-checkboxes label {
+  position: relative;
+  padding-left: 0;
+  width: 146px;
+  cursor: pointer; }
+  .usp-checkboxes label:before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    background: #00a6ec;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    -webkit-transition: all ease-in-out 0.1s;
+    -o-transition: all ease-in-out 0.1s;
+    transition: all ease-in-out 0.1s; }
+
+.usp-checkboxes input[type=checkbox] {
+  display: none; }
+  .usp-checkboxes input[type=checkbox]:checked + label {
+    color: #00a6ec; }
+    .usp-checkboxes input[type=checkbox]:checked + label:before {
+      content: "";
+      color: #fff;
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      padding: 3px 7px;
+      background: #00a6ec;
+      -webkit-transition: all ease-in-out 0.1s;
+      -o-transition: all ease-in-out 0.1s;
+      transition: all ease-in-out 0.1s; }
+
+.usp-files input[type="file"] {
+  position: fixed;
+  top: -1000px; }
+
+.usp-files .tallozas {
+  padding: 18px 25px;
+  background: #00a6ec;
+  display: inline-block;
+  height: 65px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 40px; }
+  .usp-files .tallozas:nth-child(1) .upload-img {
+    background: url("../img/portre.jpg"); }
+    .usp-files .tallozas:nth-child(1) .upload-img:before {
+      content: '1. Portré kép'; }
+  .usp-files .tallozas:nth-child(2) .upload-img {
+    background: url("../img/teljesalak.jpg"); }
+    .usp-files .tallozas:nth-child(2) .upload-img:before {
+      content: '2. Teljes alakos kép'; }
+  @media (max-width: 768px) {
+    .usp-files .tallozas:nth-child(2) {
+      margin-top: 200px; } }
+  .usp-files .tallozas .upload-img {
+    position: absolute;
+    margin-top: -152px;
+    margin-left: -25px;
+    width: 120px;
+    height: 120px; }
+    .usp-files .tallozas .upload-img:before {
+      font-family: "museoslab", "Times New Roman", Times, serif;
+      font-size: 18px;
+      text-transform: none;
+      color: #bcbcbc;
+      position: absolute;
+      margin-top: -40px;
+      width: 220px; }
+  .usp-files .tallozas .browsed:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 166, 236, 0.8);
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 70px;
+    text-rendering: auto;
+    padding: 25px; }
+  .usp-files .tallozas:hover {
+    background: #20bdff; }
+  .usp-files .tallozas:active {
+    background: #20bdff; }
+  .usp-files .tallozas:invalid {
+    background: #0082b9; }
+  .usp-files .tallozas:valid {
+    background: #0082b9; }
+    .usp-files .tallozas:valid + .upload-img {
+      background: #00a6ec; }
+
+.usp-add-another {
+  display: none; }
+
+.jelentkezes-kuldes {
+  background: #00a6ec;
+  height: 210px; }
+  @media (max-width: 768px) {
+    .jelentkezes-kuldes {
+      margin-left: -15px;
+      margin-right: -15px; } }
+  .jelentkezes-kuldes .usp-checkboxes input:checked + label {
+    color: #fff !important; }
+    .jelentkezes-kuldes .usp-checkboxes input:checked + label:before {
+      color: #00a6ec !important;
+      background: #fff !important; }
+  .jelentkezes-kuldes .usp-checkboxes label {
+    width: 510px;
+    padding-left: 85px;
+    padding-top: 20px;
+    font-family: "museoslab", "Times New Roman", Times, serif;
+    text-transform: none;
+    color: #fff; }
+    @media (max-width: 768px) {
+      .jelentkezes-kuldes .usp-checkboxes label {
+        font-size: 15px !important; } }
+    .jelentkezes-kuldes .usp-checkboxes label:before {
+      left: 25px;
+      top: 34px;
+      background: #fff;
+      color: #00a6ec; }
+  .jelentkezes-kuldes fieldset {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: 235px;
+    height: 65px; }
+    .jelentkezes-kuldes fieldset input[type="submit"] {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      color: #00a6ec; }
+
+.magamrol textarea {
+  margin: 0px;
+  min-width: 100%;
+  min-height: 125px;
+  border: none;
+  padding: 6px;
+  background: #00a6ec; }
+  .magamrol textarea::-moz-placeholder {
+    color: #0089c3;
+    opacity: 1; }
+  .magamrol textarea:-ms-input-placeholder {
+    color: #0089c3; }
+  .magamrol textarea::-webkit-input-placeholder {
+    color: #0089c3; }
+
+#uwpqsf_id {
+  border: none !important; }
+
+#uwpqsffrom_104 {
+  padding: 10px 10px 10px 0px; }
+  #uwpqsffrom_104 .togglecheck {
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle; }
+    #uwpqsffrom_104 .togglecheck span {
+      display: none; }
+    #uwpqsffrom_104 .togglecheck .col-md-4 {
+      padding: 0 5px; }
+    #uwpqsffrom_104 .togglecheck label {
+      position: relative;
+      padding-left: 0;
+      width: 146px;
+      cursor: pointer; }
+    #uwpqsffrom_104 .togglecheck input[type=checkbox] {
+      display: none; }
+      #uwpqsffrom_104 .togglecheck input[type=checkbox]:checked + label {
+        color: #00a6ec; }
+
+#cmf-check-4 {
+  width: 200px !important;
+  display: inline-block;
+  margin-left: 40px; }
+  @media (max-width: 768px) {
+    #cmf-check-4 {
+      margin-left: 0; } }
+  #cmf-check-4 span {
+    display: none; }
+  #cmf-check-4 .col-md-4 {
+    padding: 0 5px; }
+  #cmf-check-4 label {
+    position: relative;
+    padding-left: 0;
+    width: 200px !important;
+    cursor: pointer; }
+    #cmf-check-4 label:before {
+      content: "";
+      display: inline-block;
+      width: 35px;
+      height: 25px;
+      background: #00a6ec;
+      position: absolute;
+      right: 0;
+      top: 1px;
+      -webkit-transition: all ease-in-out 0.1s;
+      -o-transition: all ease-in-out 0.1s;
+      transition: all ease-in-out 0.1s; }
+  #cmf-check-4 input[type=checkbox] {
+    display: none; }
+    #cmf-check-4 input[type=checkbox]:checked + label {
+      color: #00a6ec; }
+      #cmf-check-4 input[type=checkbox]:checked + label:before {
+        content: "";
+        color: #fff;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        padding: 3px 7px;
+        background: #00a6ec;
+        -webkit-transition: all ease-in-out 0.1s;
+        -o-transition: all ease-in-out 0.1s;
+        transition: all ease-in-out 0.1s; }
+
+.custom-dropdown {
+  width: 60px; }
+  .custom-dropdown span {
+    display: none; }
+  .custom-dropdown select {
+    font-size: inherit;
+    /* inherit size from .custom-dropdown */
+    margin: 0;
+    /* remove default margins */
+    background-color: #00a6ec;
+    color: #fff;
+    width: 50px;
+    padding: 2px 5px !important; }
+
+@supports (pointer-events: none) and ((-webkit-appearance: none) or (-moz-appearance: none) or (appearance: none)) { {
+    /* FF only temp fix */
+    @-moz-document url-prefix() {
+      .custom-dropdown__select {
+        padding-right: .9em; }
+      .custom-dropdown--large .custom-dropdown__select {
+        padding-right: 1.3em; }
+      .custom-dropdown--small .custom-dropdown__select {
+        padding-right: .5em; } } }
+  .custom-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    /* &:before {
+            content: "";
+		position: absolute;
+		pointer-events: none;
+            width: 2em;
+		right: 0; top: 0; bottom: 0;
+		border-radius: 0 3px 3px 0;
+            background-color: #fff;
+		border-left: 1px solid rgba(0,0,0,.1);
+        }
+        &:after {
+            content: "";
+		position: absolute;
+		pointer-events: none;
+            content: "\25BC";
+		height: 1em;
+		font-size: .625em;
+		line-height: 1;
+		right: 1.2em;
+		top: 50%; margin-top: -.5em;
+            color: rgba(0,0,0,.9);
+        }
+        */ }
+    .custom-dropdown select {
+      padding-right: 2.5em;
+      /* accommodate with the pseudo elements for the dropdown arrow */
+      border: 0;
+      border-radius: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; } }
+
+#cmf-select0 {
+  width: 110px; }
+  #cmf-select0:before {
+    content: 'KOR';
+    display: inline-block;
+    padding-right: 10px; }
+
+#cmf-select2 {
+  width: 185px;
+  margin-left: 40px; }
+  @media (max-width: 768px) {
+    #cmf-select2 {
+      margin-left: 0; } }
+  #cmf-select2:before {
+    content: 'MAGASSÁG';
+    display: inline-block;
+    padding-right: 10px; }
+
+.uform_title {
+  display: inline-block;
+  margin-right: 82px;
+  color: #00a6ec; }
+  @media (max-width: 768px) {
+    .uform_title {
+      display: none; } }
+
+#uwpqsf_id_btn {
+  background: #00a6ec;
+  border: none;
+  color: #fff;
+  padding: 5px 7px; }
+  @media (max-width: 768px) {
+    #uwpqsf_id_btn {
+      background: #FFFFFF;
+      border: none;
+      color: #00a6ec;
+      padding: 5px 7px; } }
+
+.nyelvvalaszto {
+  width: 50%;
+  display: inline-block; }
+  @media (max-width: 768px) {
+    .nyelvvalaszto {
+      width: 100%; } }
+  .nyelvvalaszto:before {
+    content: 'NYELVEK';
+    display: inline-block;
+    margin-right: 60px; }
+
+.uwpqsf_submit {
+  text-align: right;
+  margin-bottom: 15px;
+  width: 50%;
+  display: inline-block; }
+  @media (max-width: 768px) {
+    .uwpqsf_submit {
+      width: 100%;
+      text-align: center; } }
+  .uwpqsf_submit input {
+    padding: 5px 20px;
+    height: 65px;
+    text-transform: uppercase; }
+
+.post-29 .usp-pro-form {
+  margin-top: 0; }
+
+@media (max-width: 768px) {
+  #usp-form-5 label {
+    display: none; }
+  #usp-form-5 input[name=usp-custom-rendezveny] {
+    margin-top: 30px; } }
+
+.ajanlat-submit {
+  height: 110px;
+  padding: 35px 20px;
+  background: #00a6ec; }
+  @media (max-width: 768px) {
+    .ajanlat-submit {
+      margin-top: 35px;
+      margin-left: -15px;
+      margin-right: -15px; } }
+  .ajanlat-submit fieldset {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: 235px;
+    height: 65px; }
+    @media (max-width: 768px) {
+      .ajanlat-submit fieldset {
+        left: 50%;
+        margin-left: -130px; } }
+    .ajanlat-submit fieldset input[type="submit"] {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      color: #00a6ec; }
+
+@media (max-width: 768px) {
+  .post-27 .entry-content p {
+    text-align: left;
+    line-height: 19px;
+    padding: 0; } }
+
+#pre-form {
+  position: absolute;
+  right: 0;
+  top: -110px;
+  padding: 15px;
+  background: #fff; }
+  #pre-form .preform-title {
+    position: absolute;
+    top: -46px;
+    color: #fff; }
+  #pre-form form input, #pre-form form select {
+    border: none;
+    text-transform: uppercase; }
+    #pre-form form input:focus, #pre-form form select:focus {
+      outline-color: transparent;
+      outline-style: none; }
+  #pre-form form .custom-dropdown {
+    width: 184px;
+    vertical-align: inherit; }
+    #pre-form form .custom-dropdown select {
+      background: #fff;
+      color: #00a6ec; }
+  #pre-form form #szam {
+    width: 50px;
+    margin-left: 30px; }
+  #pre-form form #datum {
+    width: 125px; }
+  #pre-form form #nemek {
+    width: 184px; }
+  #pre-form form #submit {
+    background: #fff;
+    border: none;
+    color: #00a6ec; }
+
 /*!
  * Datepicker for Bootstrap v1.7.0-dev (https://github.com/eternicode/bootstrap-datepicker)
  *
@@ -8210,7 +8846,8 @@ a.hover:hover + .fixed-overlay {
 
 .datepicker-dropdown {
   top: 0;
-  left: 0; }
+  left: 0;
+  margin-top: 40px; }
 
 .datepicker-dropdown:before {
   content: '';
