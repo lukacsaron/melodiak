@@ -2837,6 +2837,13 @@ select[multiple].input-lg,
     padding-top: 6px;
     font-size: 17px; } }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; }
+
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -8046,6 +8053,9 @@ a.skip-link {
   max-width: 100%;
   height: auto; }
 
+.hide {
+  display: none; }
+
 @media (max-width: 768px) {
   .hide-mobile {
     display: none; } }
@@ -8068,6 +8078,22 @@ a.skip-link {
 @media (max-width: 768px) {
   .callout-wrapper {
     padding: 0; } }
+
+.callout-wrapper .callout-text {
+  position: absolute;
+  right: 70px;
+  bottom: 60px;
+  padding-right: 24px;
+  width: 240px;
+  font-size: 34px;
+  text-align: right;
+  line-height: 40px;
+  color: #fff;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAMCAYAAABBV8wuAAAAO0lEQVQYlXXQMQoAMAhD0R/vf+d0KaWocRF8ZlDZNiBa1e1OMLDaohM83ADACWJCG2hLvENrG/4wXnIAxEQJFROqA8cAAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  background-position: 100%; }
+  .callout-wrapper .callout-text a {
+    color: #fff; }
 
 .search-no-results header {
   margin: 0;
@@ -8297,17 +8323,31 @@ a.hover:hover + .fixed-overlay {
   height: auto;
   margin-bottom: 35px; }
 
-.services-loop .service-box h4 {
-  text-transform: uppercase;
-  margin-bottom: 0px; }
+.page-id-27 .entry-title {
+  margin-bottom: 45px; }
 
-.services-loop .service-box ul {
-  padding-left: 20px; }
-  .services-loop .service-box ul li {
-    font-family: "museoslab", "Times New Roman", Times, serif; }
-    @media (max-width: 768px) {
-      .services-loop .service-box ul li {
-        font-size: 16px; } }
+.page-id-27 .entry-content {
+  margin-top: 25px; }
+  .page-id-27 .entry-content img {
+    margin-top: 25px; }
+
+.services-loop .service-box {
+  height: 220px; }
+  .services-loop .service-box h4 {
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .services-loop .service-box ul {
+    padding-left: 0; }
+    .services-loop .service-box ul li {
+      list-style: none;
+      font-family: "museoslab", "Times New Roman", Times, serif; }
+      .services-loop .service-box ul li:before {
+        content: '•';
+        padding-right: 8px;
+        color: #00a6ec; }
+      @media (max-width: 768px) {
+        .services-loop .service-box ul li {
+          font-size: 16px; } }
 
 .site-info {
   text-transform: uppercase; }
@@ -8417,6 +8457,12 @@ a.hover:hover + .fixed-overlay {
     .right {
       text-align: center;
       padding: 0; } }
+
+.usp-form-errors {
+  margin-top: -40px;
+  margin-bottom: 40px;
+  color: #E44343;
+  font-family: "museoslab", "Times New Roman", Times, serif; }
 
 .usp-form .col-md-6 {
   padding-left: 0; }
@@ -8632,7 +8678,9 @@ a.hover:hover + .fixed-overlay {
   min-height: 125px;
   border: none;
   padding: 6px;
-  background: #00a6ec; }
+  background: #00a6ec;
+  color: #fff;
+  text-transform: uppercase; }
   .magamrol textarea::-moz-placeholder {
     color: #0089c3;
     opacity: 1; }
@@ -8649,7 +8697,8 @@ a.hover:hover + .fixed-overlay {
   #uwpqsffrom_104 .togglecheck {
     width: 100px;
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    margin-bottom: 0; }
     #uwpqsffrom_104 .togglecheck span {
       display: none; }
     #uwpqsffrom_104 .togglecheck .col-md-4 {
@@ -8769,14 +8818,19 @@ a.hover:hover + .fixed-overlay {
       appearance: none; } }
 
 #cmf-select0 {
-  width: 110px; }
+  width: 119px; }
   #cmf-select0:before {
     content: 'KOR';
     display: inline-block;
     padding-right: 10px; }
+  #cmf-select0:after {
+    content: '-';
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #00a6ec; }
 
 #cmf-select2 {
-  width: 185px;
+  width: 193px;
   margin-left: 40px; }
   @media (max-width: 768px) {
     #cmf-select2 {
@@ -8785,6 +8839,11 @@ a.hover:hover + .fixed-overlay {
     content: 'MAGASSÁG';
     display: inline-block;
     padding-right: 10px; }
+  #cmf-select2:after {
+    content: '-';
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #00a6ec; }
 
 .uform_title {
   display: inline-block;
@@ -8871,6 +8930,9 @@ a.hover:hover + .fixed-overlay {
     line-height: 19px;
     padding: 0; } }
 
+.usp-label-captcha {
+  display: none; }
+
 @media (max-width: 784px) {
   .preform-container {
     width: 100%;
@@ -8942,13 +9004,15 @@ a.hover:hover + .fixed-overlay {
   .preform-container #pre-form form #szam {
     margin-left: 24px;
     margin-right: 14px;
-    width: 40px; }
+    width: 40px;
+    color: #00a6ec; }
     @media (max-width: 784px) {
       .preform-container #pre-form form #szam {
         margin-left: 0;
         margin-right: 62px; } }
   .preform-container #pre-form form #datum {
-    width: 125px; }
+    width: 125px;
+    color: #00a6ec; }
     @media (max-width: 784px) {
       .preform-container #pre-form form #datum {
         width: 100%; } }

@@ -20,19 +20,19 @@ get_header(); ?>
     <div class="container">
         <div class="brand-ident col-md-12">
             <div class="ident col-md-3">
-                <img src="http://hostess:8888/wp-content/themes/melodiak/img/irodak.svg">
+                <img src="http://melodiak.flashbirdcreative.com/wp-content/themes/melodiak/img/irodak.svg">
                 <span>Országosan<br>40 irodával<br>rendelkezünk</span>
             </div>
             <div class="ident col-md-3">
-                <img src="http://hostess:8888/wp-content/themes/melodiak/img/arkepzes.svg">
+                <img src="http://melodiak.flashbirdcreative.com/wp-content/themes/melodiak/img/arkepzes.svg">
                 <span>Költséghatékony<br>árképzés</span>
             </div>
             <div class="ident col-md-3">
-                <img src="http://hostess:8888/wp-content/themes/melodiak/img/tapasztalat.svg">
+                <img src="http://melodiak.flashbirdcreative.com/wp-content/themes/melodiak/img/tapasztalat.svg">
                 <span>Több évtizedes<br>szakmai tapasztalat<br>és megbízható háttér</span>
             </div>
             <div class="ident col-md-3">
-                <img src="http://hostess:8888/wp-content/themes/melodiak/img/vegzettseg.svg">
+                <img src="http://melodiak.flashbirdcreative.com/wp-content/themes/melodiak/img/vegzettseg.svg">
                 <span>Egyetemista/Főiskolás<br>képzett<br>munkavállalók</span>
             </div>
         </div>
@@ -75,64 +75,66 @@ get_header(); ?>
                 <h4>Hostess Service</h4>
                 <ul>
                     <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
+                    <li>Vásárok, termékbemutatók</li>
+                    <li>Nappali/éjszakai promóciók</li>
                 </ul>
             </div>
             <div class="service-box col-md-4">
-                <h4>Hostess Service</h4>
+                <h4>Animátori munkák</h4>
                 <ul>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
+                    <li>Tárlatvezetés, felügyelet</li>
+                    <li>Kiállítások</li>
+                    <li>Arcfestés</li>
+                    <li>Lufifújás</li>
+                    <li>Légvárak, ugróvárak</li>
                 </ul>
             </div>
             <div class="service-box col-md-4">
-                <h4>Hostess Service</h4>
+                <h4>Sampling akciók</h4>
                 <ul>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
+                    <li>Termékminta átadása üzletekben, rendezvényeken</li>
+                    <li>Lakosság közvetlen elérése, áruátvétel igazolása</li>
                 </ul>
             </div>
             <div class="service-box col-md-4">
-                <h4>Hostess Service</h4>
+                <h4>Kóstoltatások, termékbemutatás</h4>
                 <ul>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
+                    <li>Felkészítés, betanítás</li>
+                    <li>Túraterv készítése</li>
+                    <li>Teljes körű lebonyolítás</li>
                 </ul>
             </div>
             <div class="service-box col-md-4">
-                <h4>Hostess Service</h4>
+                <h4>Szórólaposztás</h4>
                 <ul>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
+                    <li>Gyalogosoknak</li>
+                    <li>Autósoknak</li>
+                    <li>Rendezvényeken</li>
+                    <li>Szélvédőre</li>
+                    <li>Korrekt ellenőrzési szisztémával</li>
                 </ul>
             </div>
             <div class="service-box col-md-4">
-                <h4>Hostess Service</h4>
+                <h4>Merchandising</h4>
                 <ul>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
+                    <li>Vásárlóhelyi reklámeszközök kihelyezése</li>
+                    <li>Polcszerviz, árufeltöltés</li>
                 </ul>
             </div>
             <div class="service-box col-md-4">
-                <h4>Hostess Service</h4>
+                <h4>Nyereményakciók</h4>
                 <ul>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
+                    <li>Előkészítés, bejelentés</li>
+                    <li>Nyereményszelvények teljes feldolgozása</li>
+                    <li>Sorsolás lebonyolítása</li>
+                    <li>Ajándékok átadása vagy kiküldése</li>
+                    <li>Elszámolás</li>
                 </ul>
             </div>
             <div class="service-box col-md-4">
-                <h4>Hostess Service</h4>
+                <h4>Guerilla-marketing</h4>
                 <ul>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
-                    <li>Kiállításokon, rendezvényeken</li>
+                    <li>Ami az etikába belefér</li>
                 </ul>
             </div>
             
@@ -143,7 +145,7 @@ get_header(); ?>
 <div class="wrapper">
     <div class="container">
         <div class="footer-callout col-md-12">
-            <img src="http://hostess:8888/wp-content/themes/melodiak/img/footer_callout.jpg">
+            <img src="http://melodiak.flashbirdcreative.com/wp-content/themes/melodiak/img/footer_callout.jpg">
         </div>
     </div>
 </div>

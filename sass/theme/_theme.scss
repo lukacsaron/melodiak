@@ -59,6 +59,10 @@ h3 {
     }
 }
 
+.hide {
+    display: none;
+}
+
 .hide-mobile {
     @media (max-width: 768px) {
         display: none;
@@ -88,6 +92,23 @@ h3 {
 .callout-wrapper {
     @media (max-width: 768px) {
         padding: 0;
+    }
+    .callout-text {
+        position: absolute;
+        right: 70px;
+        bottom: 60px;
+        padding-right: 24px;
+        width: 240px;
+        font-size: 34px;
+        text-align: right;
+        line-height: 40px;
+        color: #fff;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAMCAYAAABBV8wuAAAAO0lEQVQYlXXQMQoAMAhD0R/vf+d0KaWocRF8ZlDZNiBa1e1OMLDaohM83ADACWJCG2hLvENrG/4wXnIAxEQJFROqA8cAAAAASUVORK5CYII=');
+        background-repeat: no-repeat;
+        background-position: 100%;
+        a {
+            color:#fff;
+        }
     }
 }
 
@@ -387,16 +408,35 @@ a.hover {
 
 // SERVICES
 
+.page-id-27 {
+    .entry-title {
+        margin-bottom: 45px;
+    }
+    .entry-content {
+        margin-top: 25px;
+        img {
+            margin-top: 25px;
+        }
+    }
+}
+
 .services-loop {
     .service-box {
+        height: 220px;
         h4 {
             text-transform: uppercase;
-            margin-bottom: 0px;
+            margin-bottom: 10px; 
         }
         ul {
-            padding-left: 20px;
+            padding-left: 0;
             li {
+                list-style: none;
                 font-family: $font-family-serif;
+                &:before {
+                    content: '•';
+                    padding-right: 8px;
+                    color: $brand-primary;
+                }
                 @media (max-width: 768px) {
                     font-size: 16px;
                 }
@@ -545,6 +585,13 @@ a.hover {
         padding: 0;
     }
     
+}
+
+.usp-form-errors {
+    margin-top: -40px;
+    margin-bottom: 40px;
+    color: #E44343;
+    font-family: $font-family-serif;
 }
 
 .usp-form {
@@ -838,6 +885,8 @@ a.hover {
         border: none;
         padding: 6px;
         background: $brand-primary;
+        color: #fff;
+        text-transform: uppercase;
         @include placeholder;
     }
 }
@@ -853,6 +902,7 @@ a.hover {
         width: 100px;
         display: inline-block;
         vertical-align: middle;
+        margin-bottom: 0;
         span {
             display: none;
         }
@@ -1027,16 +1077,22 @@ a.hover {
 // CUSTOM kereso mezok
 
 #cmf-select0 {
-    width: 110px;
+    width: 119px;
     &:before {
         content: 'KOR';
         display: inline-block;
         padding-right: 10px;
     }
+    &:after {
+        content: '-';
+        padding-left: 2px;
+        padding-right: 2px;
+        color: $brand-primary;
+    }
 }
 
 #cmf-select2 {
-    width: 185px;
+    width: 193px;
     margin-left: 40px;
     @media (max-width: 768px) {
          margin-left: 0;
@@ -1045,6 +1101,12 @@ a.hover {
         content: 'MAGASSÁG';
         display: inline-block;
         padding-right: 10px;
+    }
+    &:after {
+        content: '-';
+        padding-left: 2px;
+        padding-right: 2px;
+        color: $brand-primary;
     }
 }
 
@@ -1163,6 +1225,9 @@ a.hover {
         }
     }
 }
+.usp-label-captcha {
+    display: none;
+}
 
 // pre form
 
@@ -1245,6 +1310,7 @@ a.hover {
                 margin-left: 24px;
                 margin-right: 14px;
                 width: 40px;
+                color: $brand-primary;
                 @media (max-width: 784px) {   
                     margin-left: 0;
                     margin-right: 62px;
@@ -1252,6 +1318,7 @@ a.hover {
             }
             #datum {
                 width: 125px;
+                color: $brand-primary;
                 @media (max-width: 784px) {
                     width:100%;
                 }
