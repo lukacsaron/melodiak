@@ -30,7 +30,7 @@ get_header(); ?>
             $email = get_post_meta( $post->ID, 'wpcf-email', true);
             ?>
 
-			
+			<!--  -->
             <div class="container col-md-6 col-xs-12">
                 <div class="container team-img col-md-5 col-xs-4"><img src="<?php echo $feat_image ?>"></div>
                 <div class="team-info nopadding col-md-7 col-xs-8">
@@ -51,8 +51,8 @@ get_header(); ?>
 <div class="wrapper contact-wrapper" id="page-wrapper">
     <div  id="content" class="container">   
 	   <div id="primary" class="col-md-12 content-area">
-            <div class="col-md-8 nopadding">
-                <img src="http://hostess:8888/wp-content/themes/melodiak/img/map.jpg">
+            <div class="col-md-8 nopadding" style="height:250px;">
+                <div id="map" style="width:100%; height:100%;"></div>
            </div>
            <div class="col-md-4 contact-details">
                         <?php 
@@ -74,16 +74,37 @@ get_header(); ?>
     
 </div><!-- Wrapper end -->
 
-
+<!-- footer callout -->
 
     
 <!-- footer callout -->
-<div class="wrapper">
+<div class="wrapper callout-wrapper">
     <div class="container">
-        <div class="footer-callout row">
+        <div class="footer-callout col-md-12">
+            <div class="callout-text"><a href="/jelentkezek">CSATLKOZZ HOZZÁNK</a></div>
             <img src="http://hostess:8888/wp-content/themes/melodiak/img/footer_callout.jpg">
         </div>
     </div>
 </div>
+    <script>
+    function initMap() {
+  var myLatLng = {lat: 47.484843, lng: 19.060835};
+
+  // Create a map object and specify the DOM element for display.
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    scrollwheel: false,
+    zoom: 16
+  });
+
+  // Create a marker and set its position.
+  var marker = new google.maps.Marker({
+    map: map,
+    position: myLatLng,
+    title: 'Meló Diák'
+  });
+}</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH7Pq1HX7DPRveLFG9odYAotg3vPVIjJY&callback=initMap"
+    async defer></script>
 
 <?php get_footer(); ?>

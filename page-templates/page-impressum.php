@@ -20,19 +20,19 @@ get_header(); ?>
     <div class="container">
         <div class="brand-ident col-md-12">
             <div class="ident col-md-3">
-                <img src="http://hostess:8888/wp-content/themes/melodiak/img/irodak.svg">
+                <img src="http://melodiak.flashbirdcreative.com/wp-content/themes/melodiak/img/irodak.svg">
                 <span>Országosan<br>40 irodával<br>rendelkezünk</span>
             </div>
             <div class="ident col-md-3">
-                <img src="http://hostess:8888/wp-content/themes/melodiak/img/arkepzes.svg">
+                <img src="http://melodiak.flashbirdcreative.com/wp-content/themes/melodiak/img/arkepzes.svg">
                 <span>Költséghatékony<br>árképzés</span>
             </div>
             <div class="ident col-md-3">
-                <img src="http://hostess:8888/wp-content/themes/melodiak/img/tapasztalat.svg">
+                <img src="http://melodiak.flashbirdcreative.com/wp-content/themes/melodiak/img/tapasztalat.svg">
                 <span>Több évtizedes<br>szakmai tapasztalat<br>és megbízható háttér</span>
             </div>
             <div class="ident col-md-3">
-                <img src="http://hostess:8888/wp-content/themes/melodiak/img/vegzettseg.svg">
+                <img src="http://melodiak.flashbirdcreative.com/wp-content/themes/melodiak/img/vegzettseg.svg">
                 <span>Egyetemista/Főiskolás<br>képzett<br>munkavállalók</span>
             </div>
         </div>

@@ -37,6 +37,7 @@ get_header(); ?>
             $last_word_start = strrpos($string, ' ') + 1; // +1 so we don't include the space in our result
             $surname = substr($string, $last_word_start); // $last_word = PHP.
             $szuletes = get_post_meta( $post->ID, 'usp-custom-szuletes', true);
+            $magasag = get_post_meta( $post->ID, 'usp-custom-magassag', true);
             $current_year = date("Y");
                     
    // calculate age and add to post meta if theres no value yet
@@ -68,7 +69,7 @@ get_header(); ?>
                     <span class="info info_id"><?php echo $post->ID; ?></span>
                     <h3 class="info info_nev nopadding white"><?php echo $surname; ?></h3>
                     <span class="info-inline info_eletkor"><?php echo $eletkor; ?> Éves</span>
-                    <span class="info-inline info_magassag"><?php echo $eletkor; ?> Magas</span>
+                    <span class="info-inline info_magassag"><?php echo $magasag; ?> Magas</span>
                 </div>
                 <img class="profile-img" src="<?php echo $feat_image ?>">
             </div>
@@ -82,9 +83,10 @@ get_header(); ?>
     </div>
 </div>
 <!-- footer callout -->
-<div class="wrapper">
+<div class="wrapper callout-wrapper">
     <div class="container">
         <div class="footer-callout col-md-12">
+            <div class="callout-text"><a href="/jelentkezek">CSATLKOZZ HOZZÁNK</a></div>
             <img src="http://hostess:8888/wp-content/themes/melodiak/img/footer_callout.jpg">
         </div>
     </div>

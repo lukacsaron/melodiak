@@ -8027,7 +8027,7 @@ a.skip-link {
   .entry-header {
     padding: 0; } }
 
-.home #page-wrapper {
+#page-wrapper {
   padding: 0; }
 
 #wprmenu_bar {
@@ -8092,6 +8092,12 @@ a.skip-link {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAMCAYAAABBV8wuAAAAO0lEQVQYlXXQMQoAMAhD0R/vf+d0KaWocRF8ZlDZNiBa1e1OMLDaohM83ADACWJCG2hLvENrG/4wXnIAxEQJFROqA8cAAAAASUVORK5CYII=");
   background-repeat: no-repeat;
   background-position: 100%; }
+  @media (max-width: 768px) {
+    .callout-wrapper .callout-text {
+      font-size: 20px;
+      line-height: 20px;
+      bottom: 10px;
+      right: 10px; } }
   .callout-wrapper .callout-text a {
     color: #fff; }
 
@@ -8333,6 +8339,9 @@ a.hover:hover + .fixed-overlay {
 
 .services-loop .service-box {
   height: 220px; }
+  @media (max-width: 768px) {
+    .services-loop .service-box {
+      height: auto; } }
   .services-loop .service-box h4 {
     text-transform: uppercase;
     margin-bottom: 10px; }
@@ -8340,11 +8349,14 @@ a.hover:hover + .fixed-overlay {
     padding-left: 0; }
     .services-loop .service-box ul li {
       list-style: none;
-      font-family: "museoslab", "Times New Roman", Times, serif; }
+      font-family: "museoslab", "Times New Roman", Times, serif;
+      padding-left: 20px; }
       .services-loop .service-box ul li:before {
         content: '•';
         padding-right: 8px;
-        color: #00a6ec; }
+        color: #00a6ec;
+        position: absolute;
+        margin-left: -18px; }
       @media (max-width: 768px) {
         .services-loop .service-box ul li {
           font-size: 16px; } }
@@ -8438,6 +8450,9 @@ a.hover:hover + .fixed-overlay {
   overflow: hidden;
   height: auto;
   margin-bottom: 15px; }
+  .profile-img-container .profile-img {
+    min-width: 100%;
+    height: auto; }
 
 .usp-pro-form {
   margin-top: 50px; }
@@ -8446,6 +8461,8 @@ a.hover:hover + .fixed-overlay {
   height: 31px;
   padding: 6px 6px !important;
   margin: 12px 0; }
+  .form-control[type=number] {
+    padding: 0px 6px !important; }
 
 .question {
   padding: 15px 0 10px 0; }
@@ -8692,6 +8709,9 @@ a.hover:hover + .fixed-overlay {
 #uwpqsf_id {
   border: none !important; }
 
+.uwpqsf_class span {
+  display: none; }
+
 #uwpqsffrom_104 {
   padding: 10px 10px 10px 0px; }
   #uwpqsffrom_104 .togglecheck {
@@ -8761,7 +8781,7 @@ a.hover:hover + .fixed-overlay {
 .custom-dropdown {
   width: 60px; }
   .custom-dropdown span {
-    display: none; }
+    display: block; }
   .custom-dropdown select {
     font-size: inherit;
     /* inherit size from .custom-dropdown */
@@ -8902,7 +8922,8 @@ a.hover:hover + .fixed-overlay {
 .ajanlat-submit {
   height: 110px;
   padding: 35px 20px;
-  background: #00a6ec; }
+  background: #00a6ec;
+  margin-top: 7px; }
   @media (max-width: 768px) {
     .ajanlat-submit {
       margin-top: 35px;
@@ -8984,8 +9005,8 @@ a.hover:hover + .fixed-overlay {
       outline-style: none; }
   .preform-container #pre-form form .custom-dropdown {
     width: 190px;
-    vertical-align: inherit;
-    background: #fff;
+    vertical-align: middle;
+    background: #fff !important;
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAANUlEQVQImWNkWPbmPwMRgImBgYGRCHWMTDAGPkUMDAwMTP8jhVEEsCmCWc2AQzGc/T9SmAEAt5cG5ETiApwAAAAASUVORK5CYII=");
     background-repeat: no-repeat;
     background-position: right;
@@ -8997,22 +9018,40 @@ a.hover:hover + .fixed-overlay {
         width: 100%;
         background-position: 96%;
         margin-bottom: 10px; } }
+    .preform-container #pre-form form .custom-dropdown .btn {
+      background: #fff !important;
+      color: #00a6ec;
+      padding-right: 18px;
+      width: 100%;
+      padding-top: 0px;
+      padding-bottom: 0px; }
+      .preform-container #pre-form form .custom-dropdown .btn .placehold {
+        color: #00a6ec; }
+      .preform-container #pre-form form .custom-dropdown .btn .caret {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 12px; }
     .preform-container #pre-form form .custom-dropdown select {
       background: transparent;
       color: #00a6ec;
       cursor: pointer; }
+    .preform-container #pre-form form .custom-dropdown .dropdown-menu > li > a {
+      color: #00a6ec !important; }
   .preform-container #pre-form form #szam {
     margin-left: 24px;
     margin-right: 14px;
     width: 40px;
-    color: #00a6ec; }
+    color: #00a6ec;
+    vertical-align: middle; }
     @media (max-width: 784px) {
       .preform-container #pre-form form #szam {
         margin-left: 0;
         margin-right: 62px; } }
   .preform-container #pre-form form #datum {
     width: 125px;
-    color: #00a6ec; }
+    color: #00a6ec;
+    vertical-align: middle; }
     @media (max-width: 784px) {
       .preform-container #pre-form form #datum {
         width: 100%; } }
@@ -9024,12 +9063,42 @@ a.hover:hover + .fixed-overlay {
   .preform-container #pre-form form #submit {
     background: #fff;
     border: none;
-    color: #00a6ec; }
+    color: #00a6ec;
+    vertical-align: middle; }
     @media (max-width: 784px) {
       .preform-container #pre-form form #submit {
         margin-right: -1px;
         color: #fff;
         background: #00a6ec; } }
+
+.usp-fieldset .btn {
+  background-color: #00a6ec;
+  color: #0089C3;
+  width: 100%;
+  text-align: left;
+  height: 31px;
+  line-height: 10px;
+  padding-left: 8px;
+  cursor: pointer; }
+  .usp-fieldset .btn .caret {
+    right: 11px;
+    top: 12px;
+    position: absolute;
+    padding: 0; }
+
+.usp-fieldset .dropdown-menu {
+  width: 100%;
+  margin-top: -1px;
+  margin-left: -1px;
+  border: 0;
+  background: #00a6ec;
+  color: white; }
+
+.usp-fieldset .dropdown-menu > li > a:focus, .usp-fieldset .dropdown-menu > li > a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0082b9;
+  cursor: pointer; }
 
 /*!
  * Datepicker for Bootstrap v1.7.0-dev (https://github.com/eternicode/bootstrap-datepicker)

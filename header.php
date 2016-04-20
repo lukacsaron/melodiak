@@ -55,7 +55,7 @@ if ( is_front_page() ) {
                                 </button>
 
                                 <!-- Your site title as branding in the menu -->
-                                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://hostess:8888/wp-content/themes/melodiak/img/logo.png"></a>
+                                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://melodiak.flashbirdcreative.com/wp-content/themes/melodiak/img/logo.png"></a>
 
                             </div>
 

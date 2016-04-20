@@ -101,7 +101,7 @@ get_header(); ?>
     <div class="container">
         <div class="footer-callout col-md-12">
             <div class="callout-text"><a href="/jelentkezek">CSATLKOZZ HOZZÁNK</a></div>
-            <img src="http://melodiak.flashbirdcreative.com/wp-content/themes/melodiak/img/footer_callout.jpg">
+            <img src="http://hostess:8888/wp-content/themes/melodiak/img/footer_callout.jpg">
         </div>
     </div>
 </div>

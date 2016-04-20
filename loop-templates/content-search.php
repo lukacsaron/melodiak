@@ -9,6 +9,7 @@
             $surname = substr($string, $last_word_start); // $last_word = PHP.
             $szuletes = get_post_meta( $post->ID, 'usp-custom-szuletes', true);
             $eletkor = get_post_meta( $post->ID, 'usp-custom-eletkor', true);
+            $magassag = get_post_meta( $post->ID, 'usp-custom-magassag', true);
             $current_year = date("Y");
                     
             // calculate age and add to post meta if theres no value yet
@@ -39,7 +40,7 @@
                     <span class="info info_id"><?php echo $post->ID; ?></span>
                     <h3 class="info info_nev nopadding white"><?php echo $surname; ?></h3>
                     <span class="info-inline info_eletkor"><?php echo $eletkor; ?> Éves</span>
-                    <span class="info-inline info_magassag"><?php echo $eletkor; ?> Magas</span>
+                    <span class="info-inline info_magassag"><?php echo $magassag; ?> Magas</span>
                 </div>
                 <img class="profile-img" src="<?php echo $feat_image ?>">
 </div>
